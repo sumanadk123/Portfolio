@@ -16,7 +16,7 @@ rightArrow.onclick = () => {
 document.querySelectorAll(".cert-view-btn").forEach(btn => {
     btn.addEventListener("click", () => {
         const imgSrc = btn.dataset.img;
-        document.getElementById("popup-img").src = imgSrc;
+        document.getElementById("popup-img").src = `images/${imgSrc}`;
         document.getElementById("cert-popup").style.display = "flex";
     });
 });
@@ -42,3 +42,4 @@ if (projectLeft && projectRight) {
         projectScroll.scrollBy({ left: 300, behavior: "smooth" });
     };
 }
+
